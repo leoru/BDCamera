@@ -1,5 +1,5 @@
 //
-//  BDVideoCamera.m
+//  BDCamera.m
 //
 //  Created by Kirill Kunst.
 //  Copyright (c) 2014 Borodutch Studio. All rights reserved.

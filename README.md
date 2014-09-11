@@ -15,9 +15,12 @@ platform :ios, '7.0'
 pod "BDCamera", "~> 0.1"
 ```
 
+## Usage
+
+
 ### Maintainers
 
-- [Kirill Kunst](https://github.com/leoru) ([@mattt](https://twitter.com/kirill_kunst))
+- [Kirill Kunst](https://github.com/leoru) ([@kirill_kunst](https://twitter.com/kirill_kunst))
 
 ## License
 
