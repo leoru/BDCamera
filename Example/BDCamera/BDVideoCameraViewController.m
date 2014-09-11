@@ -74,7 +74,6 @@
     [alert show];
 }
 
-
 #pragma mark - BottomView Delegate -
 - (void)cameraBottomViewActionClickAction
 {

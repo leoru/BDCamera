@@ -116,15 +116,20 @@
 }
 
 #pragma mark - For preview copies -
-- (void)setupContexts {
+- (void)setupContexts
+{
     _eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     _ciContext = [CIContext contextWithEAGLContext:_eaglContext
                                            options:@{kCIContextWorkingColorSpace : [NSNull null]} ];
 }
 
-- (void)setCaptureBufferDelegate
+- (void)captureSampleBuffer:(BOOL)capture
 {
-    [self.videoDataOutput setSampleBufferDelegate:self queue:_captureSessionQueue];
+    if (capture) {
+        [self.videoDataOutput setSampleBufferDelegate:self queue:_captureSessionQueue];
+    } else {
+        [self.videoDataOutput setSampleBufferDelegate:nil queue:_captureSessionQueue];
+    }
 }
 
 - (AVCaptureConnection *)videoCaptureConnection
@@ -358,8 +363,6 @@
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     CMFormatDescriptionRef formatDesc = CMSampleBufferGetFormatDescription(sampleBuffer);
-    
-    // update the video dimensions information
     _currentVideoDimensions = CMVideoFormatDescriptionGetDimensions(formatDesc);
     
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
@@ -372,7 +375,11 @@
     CGRect sourceExtent = sourceImage.extent;
     CGFloat sourceAspect = sourceExtent.size.width / sourceExtent.size.height;
     
-    for (GLKView *feedView in self.displayedPreviews) {
+    for (id view in self.displayedPreviews) {
+        BOOL isViewNotGLKView = [view isKindOfClass:[GLKView class]] == NO;
+        NSAssert(isViewNotGLKView, @"[BDCamera] -> Feed view should be GLKView");
+        
+        GLKView *feedView = (GLKView *)view;
         CGFloat previewAspect = feedView.drawableWidth  / feedView.drawableHeight;
         CGRect drawRect = sourceExtent;
         if (sourceAspect > previewAspect) {
@@ -401,14 +408,12 @@
 }
 
 #pragma mark - AVCaptureFileOutputRecordingDelegate
-
 - (void)captureOutput:(AVCaptureFileOutput *)captureOutput didStartRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray *)connections
 {
     _isRecording = YES;
 }
 
-- (void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL
-      fromConnections:(NSArray *)connections error:(NSError *)error
+- (void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray *)connections error:(NSError *)error
 {
     _isRecording = NO;
     

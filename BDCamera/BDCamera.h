@@ -36,6 +36,10 @@
 
 @property (nonatomic, strong, readonly) CIContext *ciContext;
 @property (nonatomic, strong, readonly) EAGLContext *eaglContext;
+
+/*
+    Every item in this array should be GLKView for render live preview
+ */
 @property (nonatomic, strong) NSMutableArray *displayedPreviews;
 
 @property (nonatomic, strong, readonly) AVCaptureMovieFileOutput *fileOutput;
@@ -55,7 +59,10 @@
 - (instancetype)initWithPreviewView:(UIView *)previewView preset:(NSString *)capturePreset;
 - (instancetype)initWithPreviewView:(UIView *)previewView;
 
-- (void)setCaptureBufferDelegate;
+/*
+ Enable
+ */
+- (void)captureSampleBuffer:(BOOL)capture;
 
 - (void)toggleContentsGravity;
 
