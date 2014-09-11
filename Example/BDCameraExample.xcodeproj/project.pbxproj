@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0D30CB19C1A62B00572034 /* BDVideoCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D30CA19C1A62B00572034 /* BDVideoCameraView.m */; };
+		6A31C7B019C17E4C00631794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A31C7AF19C17E4C00631794 /* Foundation.framework */; };
+		6A31C7B219C17E4C00631794 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A31C7B119C17E4C00631794 /* CoreGraphics.framework */; };
+		6A31C7B419C17E4C00631794 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A31C7B319C17E4C00631794 /* UIKit.framework */; };
+		6A31C7BA19C17E4C00631794 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A31C7B819C17E4C00631794 /* InfoPlist.strings */; };
+		6A31C7BC19C17E4C00631794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31C7BB19C17E4C00631794 /* main.m */; };
+		6A31C7C019C17E4C00631794 /* BDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31C7BF19C17E4C00631794 /* BDAppDelegate.m */; };
+		6A31C7C319C17E4C00631794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A31C7C119C17E4C00631794 /* Main.storyboard */; };
+		6A31C7C619C17E4C00631794 /* BDPhotoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31C7C519C17E4C00631794 /* BDPhotoCameraViewController.m */; };
+		6A31C7C819C17E4C00631794 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A31C7C719C17E4C00631794 /* Images.xcassets */; };
+		6A31C7CF19C17E4C00631794 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A31C7CE19C17E4C00631794 /* XCTest.framework */; };
+		6A31C7D019C17E4C00631794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A31C7AF19C17E4C00631794 /* Foundation.framework */; };
+		6A31C7D119C17E4C00631794 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A31C7B319C17E4C00631794 /* UIKit.framework */; };
+		6A31C7D919C17E4C00631794 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A31C7D719C17E4C00631794 /* InfoPlist.strings */; };
+		6A31C7DB19C17E4C00631794 /* BDCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31C7DA19C17E4C00631794 /* BDCameraTests.m */; };
+		6A4B61E019C1821900EA8CE8 /* BDPhotoCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B61DF19C1821900EA8CE8 /* BDPhotoCameraView.m */; };
+		6A6534BE19C1BCD30099236E /* BDCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6534BB19C1BCD30099236E /* BDCamera.m */; };
+		6A6534BF19C1BCD30099236E /* BDStillImageCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6534BD19C1BCD30099236E /* BDStillImageCamera.m */; };
+		6A82A32619C1862C008468EE /* BDCameraBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A32519C1862C008468EE /* BDCameraBottomView.m */; };
+		6AD5C30519C1893300E244F3 /* BDVideoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5C30419C1893300E244F3 /* BDVideoCameraViewController.m */; };
+		6AD5C30819C18B3D00E244F3 /* BDCameraBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5C30719C18B3D00E244F3 /* BDCameraBottomView.xib */; };
+		6AFBE50D19C186DD00CB0F00 /* BDStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFBE50C19C186DD00CB0F00 /* BDStartViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A31C7D219C17E4C00631794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A31C7A419C17E4C00631794 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A31C7AB19C17E4C00631794;
+			remoteInfo = BDCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A0D30C919C1A62B00572034 /* BDVideoCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDVideoCameraView.h; path = Views/BDVideoCameraView.h; sourceTree = "<group>"; };
+		6A0D30CA19C1A62B00572034 /* BDVideoCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDVideoCameraView.m; path = Views/BDVideoCameraView.m; sourceTree = "<group>"; };
+		6A31C7AC19C17E4C00631794 /* BDCameraExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDCameraExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A31C7AF19C17E4C00631794 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A31C7B119C17E4C00631794 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A31C7B319C17E4C00631794 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A31C7B719C17E4C00631794 /* BDCameraExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BDCameraExample-Info.plist"; sourceTree = "<group>"; };
+		6A31C7B919C17E4C00631794 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A31C7BB19C17E4C00631794 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A31C7BD19C17E4C00631794 /* BDCameraExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDCameraExample-Prefix.pch"; sourceTree = "<group>"; };
+		6A31C7BE19C17E4C00631794 /* BDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppDelegate.h; sourceTree = "<group>"; };
+		6A31C7BF19C17E4C00631794 /* BDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppDelegate.m; sourceTree = "<group>"; };
+		6A31C7C219C17E4C00631794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A31C7C419C17E4C00631794 /* BDPhotoCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPhotoCameraViewController.h; sourceTree = "<group>"; };
+		6A31C7C519C17E4C00631794 /* BDPhotoCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDPhotoCameraViewController.m; sourceTree = "<group>"; };
+		6A31C7C719C17E4C00631794 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A31C7CD19C17E4C00631794 /* BDCameraExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDCameraExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A31C7CE19C17E4C00631794 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6A31C7D619C17E4C00631794 /* BDCameraExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BDCameraExampleTests-Info.plist"; sourceTree = "<group>"; };
+		6A31C7D819C17E4C00631794 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A31C7DA19C17E4C00631794 /* BDCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDCameraTests.m; sourceTree = "<group>"; };
+		6A4B61DE19C1821900EA8CE8 /* BDPhotoCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDPhotoCameraView.h; sourceTree = "<group>"; };
+		6A4B61DF19C1821900EA8CE8 /* BDPhotoCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDPhotoCameraView.m; sourceTree = "<group>"; };
+		6A6534BA19C1BCD30099236E /* BDCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCamera.h; sourceTree = "<group>"; };
+		6A6534BB19C1BCD30099236E /* BDCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCamera.m; sourceTree = "<group>"; };
+		6A6534BC19C1BCD30099236E /* BDStillImageCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDStillImageCamera.h; sourceTree = "<group>"; };
+		6A6534BD19C1BCD30099236E /* BDStillImageCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDStillImageCamera.m; sourceTree = "<group>"; };
+		6A82A32419C1862C008468EE /* BDCameraBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDCameraBottomView.h; path = Views/BDCameraBottomView.h; sourceTree = "<group>"; };
+		6A82A32519C1862C008468EE /* BDCameraBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDCameraBottomView.m; path = Views/BDCameraBottomView.m; sourceTree = "<group>"; };
+		6AD5C30319C1893300E244F3 /* BDVideoCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVideoCameraViewController.h; sourceTree = "<group>"; };
+		6AD5C30419C1893300E244F3 /* BDVideoCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVideoCameraViewController.m; sourceTree = "<group>"; };
+		6AD5C30719C18B3D00E244F3 /* BDCameraBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BDCameraBottomView.xib; path = Views/BDCameraBottomView.xib; sourceTree = "<group>"; };
+		6AFBE50B19C186DD00CB0F00 /* BDStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDStartViewController.h; sourceTree = "<group>"; };
+		6AFBE50C19C186DD00CB0F00 /* BDStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDStartViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A31C7A919C17E4C00631794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A31C7B219C17E4C00631794 /* CoreGraphics.framework in Frameworks */,
+				6A31C7B419C17E4C00631794 /* UIKit.framework in Frameworks */,
+				6A31C7B019C17E4C00631794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A31C7CA19C17E4C00631794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A31C7CF19C17E4C00631794 /* XCTest.framework in Frameworks */,
+				6A31C7D119C17E4C00631794 /* UIKit.framework in Frameworks */,
+				6A31C7D019C17E4C00631794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A31C7A319C17E4C00631794 = {
+			isa = PBXGroup;
+			children = (
+				6A31C7B519C17E4C00631794 /* BDCamera */,
+				6A31C7D419C17E4C00631794 /* BDCameraTests */,
+				6A31C7AE19C17E4C00631794 /* Frameworks */,
+				6A31C7AD19C17E4C00631794 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A31C7AD19C17E4C00631794 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A31C7AC19C17E4C00631794 /* BDCameraExample.app */,
+				6A31C7CD19C17E4C00631794 /* BDCameraExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A31C7AE19C17E4C00631794 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A31C7AF19C17E4C00631794 /* Foundation.framework */,
+				6A31C7B119C17E4C00631794 /* CoreGraphics.framework */,
+				6A31C7B319C17E4C00631794 /* UIKit.framework */,
+				6A31C7CE19C17E4C00631794 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A31C7B519C17E4C00631794 /* BDCamera */ = {
+			isa = PBXGroup;
+			children = (
+				6A6534B919C1BCD30099236E /* BDCamera */,
+				6AD5C30219C188C500E244F3 /* Controllers */,
+				6A82A32319C18612008468EE /* Views */,
+				6A31C7BE19C17E4C00631794 /* BDAppDelegate.h */,
+				6A31C7BF19C17E4C00631794 /* BDAppDelegate.m */,
+				6A31C7C119C17E4C00631794 /* Main.storyboard */,
+				6A31C7C719C17E4C00631794 /* Images.xcassets */,
+				6A31C7B619C17E4C00631794 /* Supporting Files */,
+			);
+			path = BDCamera;
+			sourceTree = "<group>";
+		};
+		6A31C7B619C17E4C00631794 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A31C7B719C17E4C00631794 /* BDCameraExample-Info.plist */,
+				6A31C7B819C17E4C00631794 /* InfoPlist.strings */,
+				6A31C7BB19C17E4C00631794 /* main.m */,
+				6A31C7BD19C17E4C00631794 /* BDCameraExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A31C7D419C17E4C00631794 /* BDCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A31C7DA19C17E4C00631794 /* BDCameraTests.m */,
+				6A31C7D519C17E4C00631794 /* Supporting Files */,
+			);
+			path = BDCameraTests;
+			sourceTree = "<group>";
+		};
+		6A31C7D519C17E4C00631794 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A31C7D619C17E4C00631794 /* BDCameraExampleTests-Info.plist */,
+				6A31C7D719C17E4C00631794 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A6534B919C1BCD30099236E /* BDCamera */ = {
+			isa = PBXGroup;
+			children = (
+				6A6534BA19C1BCD30099236E /* BDCamera.h */,
+				6A6534BB19C1BCD30099236E /* BDCamera.m */,
+				6A6534BC19C1BCD30099236E /* BDStillImageCamera.h */,
+				6A6534BD19C1BCD30099236E /* BDStillImageCamera.m */,
+			);
+			name = BDCamera;
+			path = ../../BDCamera;
+			sourceTree = "<group>";
+		};
+		6A82A32319C18612008468EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A4B61DE19C1821900EA8CE8 /* BDPhotoCameraView.h */,
+				6A4B61DF19C1821900EA8CE8 /* BDPhotoCameraView.m */,
+				6A82A32419C1862C008468EE /* BDCameraBottomView.h */,
+				6A82A32519C1862C008468EE /* BDCameraBottomView.m */,
+				6AD5C30719C18B3D00E244F3 /* BDCameraBottomView.xib */,
+				6A0D30C919C1A62B00572034 /* BDVideoCameraView.h */,
+				6A0D30CA19C1A62B00572034 /* BDVideoCameraView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6AD5C30219C188C500E244F3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A31C7C419C17E4C00631794 /* BDPhotoCameraViewController.h */,
+				6A31C7C519C17E4C00631794 /* BDPhotoCameraViewController.m */,
+				6AFBE50B19C186DD00CB0F00 /* BDStartViewController.h */,
+				6AFBE50C19C186DD00CB0F00 /* BDStartViewController.m */,
+				6AD5C30319C1893300E244F3 /* BDVideoCameraViewController.h */,
+				6AD5C30419C1893300E244F3 /* BDVideoCameraViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A31C7AB19C17E4C00631794 /* BDCameraExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A31C7DE19C17E4C00631794 /* Build configuration list for PBXNativeTarget "BDCameraExample" */;
+			buildPhases = (
+				6A31C7A819C17E4C00631794 /* Sources */,
+				6A31C7A919C17E4C00631794 /* Frameworks */,
+				6A31C7AA19C17E4C00631794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BDCameraExample;
+			productName = BDCamera;
+			productReference = 6A31C7AC19C17E4C00631794 /* BDCameraExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A31C7CC19C17E4C00631794 /* BDCameraExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A31C7E119C17E4C00631794 /* Build configuration list for PBXNativeTarget "BDCameraExampleTests" */;
+			buildPhases = (
+				6A31C7C919C17E4C00631794 /* Sources */,
+				6A31C7CA19C17E4C00631794 /* Frameworks */,
+				6A31C7CB19C17E4C00631794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A31C7D319C17E4C00631794 /* PBXTargetDependency */,
+			);
+			name = BDCameraExampleTests;
+			productName = BDCameraTests;
+			productReference = 6A31C7CD19C17E4C00631794 /* BDCameraExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A31C7A419C17E4C00631794 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Borodutch LLC";
+				TargetAttributes = {
+					6A31C7CC19C17E4C00631794 = {
+						TestTargetID = 6A31C7AB19C17E4C00631794;
+					};
+				};
+			};
+			buildConfigurationList = 6A31C7A719C17E4C00631794 /* Build configuration list for PBXProject "BDCameraExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A31C7A319C17E4C00631794;
+			productRefGroup = 6A31C7AD19C17E4C00631794 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A31C7AB19C17E4C00631794 /* BDCameraExample */,
+				6A31C7CC19C17E4C00631794 /* BDCameraExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A31C7AA19C17E4C00631794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A31C7C819C17E4C00631794 /* Images.xcassets in Resources */,
+				6A31C7BA19C17E4C00631794 /* InfoPlist.strings in Resources */,
+				6AD5C30819C18B3D00E244F3 /* BDCameraBottomView.xib in Resources */,
+				6A31C7C319C17E4C00631794 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A31C7CB19C17E4C00631794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A31C7D919C17E4C00631794 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A31C7A819C17E4C00631794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD5C30519C1893300E244F3 /* BDVideoCameraViewController.m in Sources */,
+				6A31C7C619C17E4C00631794 /* BDPhotoCameraViewController.m in Sources */,
+				6A6534BE19C1BCD30099236E /* BDCamera.m in Sources */,
+				6A82A32619C1862C008468EE /* BDCameraBottomView.m in Sources */,
+				6A0D30CB19C1A62B00572034 /* BDVideoCameraView.m in Sources */,
+				6A6534BF19C1BCD30099236E /* BDStillImageCamera.m in Sources */,
+				6A4B61E019C1821900EA8CE8 /* BDPhotoCameraView.m in Sources */,
+				6AFBE50D19C186DD00CB0F00 /* BDStartViewController.m in Sources */,
+				6A31C7C019C17E4C00631794 /* BDAppDelegate.m in Sources */,
+				6A31C7BC19C17E4C00631794 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A31C7C919C17E4C00631794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A31C7DB19C17E4C00631794 /* BDCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A31C7D319C17E4C00631794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A31C7AB19C17E4C00631794 /* BDCameraExample */;
+			targetProxy = 6A31C7D219C17E4C00631794 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A31C7B819C17E4C00631794 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A31C7B919C17E4C00631794 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A31C7C119C17E4C00631794 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A31C7C219C17E4C00631794 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A31C7D719C17E4C00631794 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A31C7D819C17E4C00631794 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A31C7DC19C17E4C00631794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A31C7DD19C17E4C00631794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A31C7DF19C17E4C00631794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BDCamera/BDCameraExample-Prefix.pch";
+				INFOPLIST_FILE = "BDCamera/BDCameraExample-Info.plist";
+				PRODUCT_NAME = BDCameraExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A31C7E019C17E4C00631794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BDCamera/BDCameraExample-Prefix.pch";
+				INFOPLIST_FILE = "BDCamera/BDCameraExample-Info.plist";
+				PRODUCT_NAME = BDCameraExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6A31C7E219C17E4C00631794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BDCamera.app/BDCamera";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BDCamera/BDCamera-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BDCameraTests/BDCameraExampleTests-Info.plist";
+				PRODUCT_NAME = BDCameraExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6A31C7E319C17E4C00631794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BDCamera.app/BDCamera";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BDCamera/BDCamera-Prefix.pch";
+				INFOPLIST_FILE = "BDCameraTests/BDCameraExampleTests-Info.plist";
+				PRODUCT_NAME = BDCameraExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A31C7A719C17E4C00631794 /* Build configuration list for PBXProject "BDCameraExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A31C7DC19C17E4C00631794 /* Debug */,
+				6A31C7DD19C17E4C00631794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A31C7DE19C17E4C00631794 /* Build configuration list for PBXNativeTarget "BDCameraExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A31C7DF19C17E4C00631794 /* Debug */,
+				6A31C7E019C17E4C00631794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A31C7E119C17E4C00631794 /* Build configuration list for PBXNativeTarget "BDCameraExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A31C7E219C17E4C00631794 /* Debug */,
+				6A31C7E319C17E4C00631794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A31C7A419C17E4C00631794 /* Project object */;
+}
