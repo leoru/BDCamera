@@ -21,4 +21,4 @@ pod "BDCamera", "~> 0.1"
 
 ## License
 
-AFNetworking is available under the MIT license. See the LICENSE file for more info.
+BDCamera is available under the MIT license. See the LICENSE file for more info.
