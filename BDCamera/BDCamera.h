@@ -38,7 +38,7 @@
 @property (nonatomic, strong, readonly) EAGLContext *eaglContext;
 
 /*
-    Every item in this array should be GLKView for render live preview
+    Every item in this array should be BDLivePreview for render live preview
  */
 @property (nonatomic, strong) NSMutableArray *displayedPreviews;
 

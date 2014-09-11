@@ -25,6 +25,7 @@
 		6A4B61E019C1821900EA8CE8 /* BDPhotoCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B61DF19C1821900EA8CE8 /* BDPhotoCameraView.m */; };
 		6A6534BE19C1BCD30099236E /* BDCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6534BB19C1BCD30099236E /* BDCamera.m */; };
 		6A6534BF19C1BCD30099236E /* BDStillImageCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6534BD19C1BCD30099236E /* BDStillImageCamera.m */; };
+		6A6534C819C1CAE80099236E /* BDLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6534C719C1CAE80099236E /* BDLivePreview.m */; };
 		6A82A32619C1862C008468EE /* BDCameraBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A32519C1862C008468EE /* BDCameraBottomView.m */; };
 		6AD5C30519C1893300E244F3 /* BDVideoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5C30419C1893300E244F3 /* BDVideoCameraViewController.m */; };
 		6AD5C30819C18B3D00E244F3 /* BDCameraBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5C30719C18B3D00E244F3 /* BDCameraBottomView.xib */; };
@@ -69,6 +70,8 @@
 		6A6534BB19C1BCD30099236E /* BDCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCamera.m; sourceTree = "<group>"; };
 		6A6534BC19C1BCD30099236E /* BDStillImageCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDStillImageCamera.h; sourceTree = "<group>"; };
 		6A6534BD19C1BCD30099236E /* BDStillImageCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDStillImageCamera.m; sourceTree = "<group>"; };
+		6A6534C619C1CAE80099236E /* BDLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDLivePreview.h; sourceTree = "<group>"; };
+		6A6534C719C1CAE80099236E /* BDLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDLivePreview.m; sourceTree = "<group>"; };
 		6A82A32419C1862C008468EE /* BDCameraBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDCameraBottomView.h; path = Views/BDCameraBottomView.h; sourceTree = "<group>"; };
 		6A82A32519C1862C008468EE /* BDCameraBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDCameraBottomView.m; path = Views/BDCameraBottomView.m; sourceTree = "<group>"; };
 		6AD5C30319C1893300E244F3 /* BDVideoCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVideoCameraViewController.h; sourceTree = "<group>"; };
@@ -179,6 +182,7 @@
 		6A6534B919C1BCD30099236E /* BDCamera */ = {
 			isa = PBXGroup;
 			children = (
+				6A6534C519C1CAE80099236E /* Views */,
 				6A6534BA19C1BCD30099236E /* BDCamera.h */,
 				6A6534BB19C1BCD30099236E /* BDCamera.m */,
 				6A6534BC19C1BCD30099236E /* BDStillImageCamera.h */,
@@ -186,6 +190,15 @@
 			);
 			name = BDCamera;
 			path = ../../BDCamera;
+			sourceTree = "<group>";
+		};
+		6A6534C519C1CAE80099236E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A6534C619C1CAE80099236E /* BDLivePreview.h */,
+				6A6534C719C1CAE80099236E /* BDLivePreview.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6A82A32319C18612008468EE /* Views */ = {
@@ -321,6 +334,7 @@
 				6A0D30CB19C1A62B00572034 /* BDVideoCameraView.m in Sources */,
 				6A6534BF19C1BCD30099236E /* BDStillImageCamera.m in Sources */,
 				6A4B61E019C1821900EA8CE8 /* BDPhotoCameraView.m in Sources */,
+				6A6534C819C1CAE80099236E /* BDLivePreview.m in Sources */,
 				6AFBE50D19C186DD00CB0F00 /* BDStartViewController.m in Sources */,
 				6A31C7C019C17E4C00631794 /* BDAppDelegate.m in Sources */,
 				6A31C7BC19C17E4C00631794 /* main.m in Sources */,

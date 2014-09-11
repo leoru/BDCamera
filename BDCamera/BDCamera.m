@@ -25,6 +25,7 @@
 
 #import "BDCamera.h"
 #import <GLKit/GLKit.h>
+#import "BDLivePreview.h"
 
 @interface BDCamera() <AVCaptureFileOutputRecordingDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
@@ -376,10 +377,10 @@
     CGFloat sourceAspect = sourceExtent.size.width / sourceExtent.size.height;
     
     for (id view in self.displayedPreviews) {
-        BOOL isViewNotGLKView = [view isKindOfClass:[GLKView class]] == NO;
+        BOOL isViewNotGLKView = [view isKindOfClass:[BDLivePreview class]] == YES;
         NSAssert(isViewNotGLKView, @"[BDCamera] -> Feed view should be GLKView");
         
-        GLKView *feedView = (GLKView *)view;
+        BDLivePreview *feedView = (BDLivePreview *)view;
         CGFloat previewAspect = feedView.drawableWidth  / feedView.drawableHeight;
         CGRect drawRect = sourceExtent;
         if (sourceAspect > previewAspect) {
