@@ -377,8 +377,8 @@
     CGFloat sourceAspect = sourceExtent.size.width / sourceExtent.size.height;
     
     for (id view in self.displayedPreviews) {
-        BOOL isViewNotGLKView = [view isKindOfClass:[BDLivePreview class]] == YES;
-        NSAssert(isViewNotGLKView, @"[BDCamera] -> Feed view should be GLKView");
+        BOOL viewIsGLKView = [view isKindOfClass:[BDLivePreview class]] == YES;
+        NSAssert(viewIsGLKView, @"[BDCamera] -> Feed view should be GLKView or BDLivePreview");
         
         BDLivePreview *feedView = (BDLivePreview *)view;
         CGFloat previewAspect = feedView.drawableWidth  / feedView.drawableHeight;
@@ -396,6 +396,7 @@
         if (_eaglContext != [EAGLContext currentContext]) {
             [EAGLContext setCurrentContext:_eaglContext];
         }
+        
         glClearColor(0.5, 0.5, 0.5, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
         glEnable(GL_BLEND);

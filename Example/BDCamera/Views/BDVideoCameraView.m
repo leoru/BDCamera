@@ -72,6 +72,7 @@
     self.recording = YES;
     NSURL *movieURL = [self getURLForNewVideo];
     double delayToStartRecording = 0.5;
+    [self.camera switchFPS:120.0f];
     dispatch_time_t startTime = dispatch_time(DISPATCH_TIME_NOW, delayToStartRecording * NSEC_PER_SEC);
     dispatch_after(startTime, dispatch_get_main_queue(), ^(void){
         [self.camera startRecordingWithURL:movieURL];

@@ -60,7 +60,7 @@
 - (instancetype)initWithPreviewView:(UIView *)previewView;
 
 /*
- Enable
+ Enable delegate for capturing sample buffer and output to live previews
  */
 - (void)captureSampleBuffer:(BOOL)capture;
 
