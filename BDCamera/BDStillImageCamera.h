@@ -29,6 +29,9 @@
 
 @property (nonatomic, strong, readonly) AVCaptureStillImageOutput *photoOutput;
 
-- (void)captureImageWithCompletion:(void(^)(UIImage *capturedImage, NSError *error))completion;
+/*
+ Take image from camera
+ */
+- (void)takeImageWithCompletion:(void(^)(UIImage *capturedImage, NSError *error))completion;
 
 @end

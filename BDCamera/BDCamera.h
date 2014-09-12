@@ -34,6 +34,9 @@
 
 @interface BDCamera : NSObject
 
+/*
+ This contexts will be used for live previews
+ */
 @property (nonatomic, strong, readonly) CIContext *ciContext;
 @property (nonatomic, strong, readonly) EAGLContext *eaglContext;
 
@@ -48,14 +51,32 @@
 @property (nonatomic, strong, readonly) AVCaptureSession *captureSession;
 @property (nonatomic, strong, readonly) AVCaptureDevice *videoDevice;
 
+/*
+ You can change orientation of output
+ */
 @property (nonatomic, assign) UIInterfaceOrientation outputImageOrientation;
+
+/*
+ Support of video zooming.
+ Zoom can't be more than of videoDevice.activeFormat.videoMaxZoomFactor
+ */
 @property (nonatomic, assign) CGFloat zoom;
+
+/*
+ You can change videoGravity of previewLayer
+ */
 @property (nonatomic, strong) NSString *videoGravity;
+
+/*
+ Detect if camera is recodning now
+ */
 @property (nonatomic, readonly) BOOL isRecording;
 
 @property (nonatomic, weak) id<BDCameraDelegate> videoDelegate;
 
-
+/*
+ Initializers
+ */
 - (instancetype)initWithPreviewView:(UIView *)previewView preset:(NSString *)capturePreset;
 - (instancetype)initWithPreviewView:(UIView *)previewView;
 
@@ -64,17 +85,46 @@
  */
 - (void)captureSampleBuffer:(BOOL)capture;
 
+
+/*
+ Toggle content gravity of previewLayer
+ */
 - (void)toggleContentsGravity;
 
+
+/*
+ Reset FPS to default
+ */
 - (void)resetToDefaultFormat;
+
+/*
+ Switching of video recording FPS
+ */
 - (void)switchFPS:(CGFloat)desiredFPS;
 
+/*
+ Start recording with giver url
+ */
 - (void)startRecordingWithURL:(NSURL *)url;
+
+/*
+ Stop recording
+ */
 - (void)stopRecording;
 
+/* 
+ Stop capturing
+ */
 - (void)stopCameraCapture;
+
+/*
+ Start capturing
+ */
 - (void)startCameraCapture;
 
+/*
+ You can rotate camera, back of front
+ */
 - (void)rotateCamera;
 
 @end

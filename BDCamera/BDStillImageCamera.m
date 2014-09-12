@@ -88,7 +88,7 @@
     }
 }
 
-- (void)captureImageWithCompletion:(void (^)(UIImage *, NSError *))completion
+- (void)takeImageWithCompletion:(void (^)(UIImage *, NSError *))completion
 {
     [self.photoOutput captureStillImageAsynchronouslyFromConnection:[self stillImageConnection]  completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];

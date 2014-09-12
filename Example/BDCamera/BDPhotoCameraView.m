@@ -53,7 +53,7 @@
 
 - (void)takePhotoWithCompletion:(void (^)(UIImage *))completion
 {
-    [self.camera captureImageWithCompletion:^(UIImage *capturedImage, NSError *error) {
+    [self.camera takeImageWithCompletion:^(UIImage *capturedImage, NSError *error) {
         completion(capturedImage);
     }];
 }
