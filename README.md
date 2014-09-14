@@ -43,6 +43,8 @@ self.camera = [[BDStillImageCamera alloc] initWithPreviewView:self preset:AVCapt
 self.camera = [[BDCamera alloc] initWithPreviewView:self preset:AVCaptureSessionPreset1280x720];
 
 [self.camera startCameraCapture];
+
+[self.view addSubview:cameraView];
 ```
 
 ### Photo Camera
