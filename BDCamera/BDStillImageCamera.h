@@ -29,6 +29,12 @@
 
 @property (nonatomic, strong, readonly) AVCaptureStillImageOutput *photoOutput;
 
+
+/*
+ Still Image connection
+ */
+- (AVCaptureConnection *)stillImageConnection;
+
 /*
  Take image from camera
  */

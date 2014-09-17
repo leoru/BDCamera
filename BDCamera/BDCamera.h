@@ -80,6 +80,12 @@
 - (instancetype)initWithPreviewView:(UIView *)previewView preset:(NSString *)capturePreset;
 - (instancetype)initWithPreviewView:(UIView *)previewView;
 
+
+/*
+ Video Capture connection
+ */
+- (AVCaptureConnection *)videoCaptureConnection;
+
 /*
  Enable delegate for capturing sample buffer and output to live previews
  */
